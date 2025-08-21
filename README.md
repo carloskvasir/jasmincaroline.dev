@@ -2,10 +2,18 @@
 
 Projeto React criado com Vite para o portfólio de Jasmin Caroline, futura desenvolvedora frontend.
 
+## Tecnologias Utilizadas
+- **React 19** - Biblioteca JavaScript para interfaces
+- **Vite** - Build tool moderna e rápida
+- **Styled Components** - CSS-in-JS para estilização
+- **React Router DOM** - Roteamento para SPAs
+- **ESLint & Prettier** - Qualidade e formatação de código
+
 ## Scripts
 - `npm run dev`: roda o projeto em modo desenvolvimento
 - `npm run build`: gera build de produção
 - `npm run preview`: visualiza build de produção localmente
+- `npm run lint`: executa linting do código
 - `npm run deploy`: deploy manual para GitHub Pages
 
 ## Objetivo
