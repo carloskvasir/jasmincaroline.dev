@@ -1,0 +1,39 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache headers para assets estáticos (incluindo imagens)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/jasmin-caroline.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Ativar compressão Brotli e Gzip para todos os arquivos
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Encoding = "br, gzip"
+
+# (Opcional) Plugins Netlify para performance
+[[plugins]]
+  package = "@netlify/plugin-image-optim"
