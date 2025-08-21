@@ -28,12 +28,4 @@
   [headers.values]
     Cache-Control = "no-cache"
 
-# Ativar compressão Brotli e Gzip para todos os arquivos
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Encoding = "br, gzip"
 
-# (Opcional) Plugins Netlify para performance
-[[plugins]]
-  package = "@netlify/plugin-image-optim"
