@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-import Contato from './Contact'
+import Contact from './Contact'
 import SocialLinks from '../components/SocialLinks'
 import OptimizedImage from '../components/OptimizedImage'
 import SEOProvider from '../components/SEOProvider'
@@ -78,8 +78,7 @@ const Home = () => (
           </AboutContent>
         </AboutSection>
 
-  {/* Seção de Contato */}
-  <Contato />
+  <Contact />
       </MainContent>
 
       <Footer>

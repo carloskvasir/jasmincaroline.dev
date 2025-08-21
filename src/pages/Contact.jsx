@@ -5,18 +5,18 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <ContactSection id="contato">
+    <ContactSection id="contact">
       <h2>Contato</h2>
       {submitted ? (
         <div className="success-message">Mensagem enviada com sucesso! Obrigado pelo contato.</div>
       ) : (
         <form 
-          name="contato" 
+          name="contact" 
           method="POST" 
           data-netlify="true" 
           onSubmit={() => setSubmitted(true)}
         >
-          <input type="hidden" name="form-name" value="contato" />
+          <input type="hidden" name="form-name" value="contact" />
           <label>
             Nome
             <input type="text" name="nome" required />
