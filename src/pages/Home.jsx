@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import Contato from './Contact'
 import SocialLinks from '../components/SocialLinks'
 import OptimizedImage from '../components/OptimizedImage'
 import SEOProvider from '../components/SEOProvider'
@@ -19,6 +20,7 @@ import {
   AboutText,
   Footer,
 } from '../styles/Home.styles'
+import { ContactSection } from '../styles/Contact.styles'
 
 const Home = () => (
   <SEOProvider
@@ -75,6 +77,9 @@ const Home = () => (
             </AboutText>
           </AboutContent>
         </AboutSection>
+
+  {/* Seção de Contato */}
+  <Contato />
       </MainContent>
 
       <Footer>
