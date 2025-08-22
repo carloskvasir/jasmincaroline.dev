@@ -4,7 +4,7 @@ import {
   AboutTitle,
   AboutContent,
   AboutText,
-} from '../styles/Home.styles'
+} from '../../styles/sections/About.styles'
 
 const About = () => (
   <AboutSection id='about'>

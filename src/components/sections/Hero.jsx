@@ -1,7 +1,7 @@
 import React from 'react'
-import OptimizedImage from './OptimizedImage'
-import SocialLinks from './SocialLinks'
-import profileImage from '../assets/image.png'
+import OptimizedImage from '../OptimizedImage'
+import SocialLinks from '../SocialLinks'
+import profileImage from '../../assets/image.png'
 import {
   HeroSection,
   ProfileFigure,
@@ -9,7 +9,7 @@ import {
   HeroTitle,
   HeroSubtitle,
   HeroDescription,
-} from '../styles/Home.styles'
+} from '../../styles/sections/Hero.styles'
 
 const Hero = () => (
   <HeroSection id='hero'>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ContactSection as StyledContactSection } from '../styles/Contact.styles';
+import { ContactSection as StyledContactSection } from '../../styles/Contact.styles';
 
 const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
