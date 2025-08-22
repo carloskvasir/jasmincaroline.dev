@@ -60,11 +60,7 @@ html {
   scroll-behavior: smooth;
   /* Compensar altura do navbar fixo (80px aproximadamente) */
   scroll-padding-top: 100px;
-}
-
-/* Classe utilitária para seções com navbar fixo */
-.section-with-navbar {
-  scroll-margin-top: 100px;
+  overflow-x: hidden;
 }
 
 body {
@@ -73,6 +69,13 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   font-size: var(--font-size-base);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Classe utilitária para seções com navbar fixo */
+.section-with-navbar {
+  scroll-margin-top: 100px;
 }
 
 /* Typography */
