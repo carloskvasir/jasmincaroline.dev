@@ -58,6 +58,13 @@
 
 html {
   scroll-behavior: smooth;
+  /* Compensar altura do navbar fixo (80px aproximadamente) */
+  scroll-padding-top: 100px;
+}
+
+/* Classe utilitária para seções com navbar fixo */
+.section-with-navbar {
+  scroll-margin-top: 100px;
 }
 
 body {

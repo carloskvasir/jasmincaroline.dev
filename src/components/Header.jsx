@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { setupSmoothScrollLinks, handleInitialHash } from '../utils/smoothScroll'
 import {
   HeaderContainer,
   Nav,
@@ -8,24 +9,34 @@ import {
   NavLink,
 } from '../styles/Header.styles'
 
-const Header = () => (
-  <HeaderContainer>
-    <Nav>
-      <Logo>Jasmin Caroline</Logo>
+const Header = () => {
+  useEffect(() => {
+    // Configurar scroll suave para os links de navegação
+    setupSmoothScrollLinks();
+    
+    // Verificar se há hash na URL e fazer scroll para a seção correspondente
+    handleInitialHash();
+  }, []);
 
-      <NavList>
-        <NavItem>
-          <NavLink href='#hero'>Início</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href='#about'>Sobre</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#contact">Contato</NavLink>
-        </NavItem>
-      </NavList>
-    </Nav>
-  </HeaderContainer>
-)
+  return (
+    <HeaderContainer>
+      <Nav>
+        <Logo>Jasmin Caroline</Logo>
+
+        <NavList>
+          <NavItem>
+            <NavLink href='#hero'>Início</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href='#about'>Sobre</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#contact">Contato</NavLink>
+          </NavItem>
+        </NavList>
+      </Nav>
+    </HeaderContainer>
+  )
+}
 
 export default Header

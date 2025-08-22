@@ -86,6 +86,9 @@ export const HeroSection = styled.section`
   justify-content: center;
   padding: var(--spacing-3xl) var(--spacing-xl);
   text-align: center;
+  
+  /* Adicionar scroll-margin-top para compatibilidade */
+  scroll-margin-top: 100px;
 
   @media (max-width: 768px) {
     padding: var(--spacing-2xl) var(--spacing-md);

@@ -3,7 +3,7 @@ export { default as Layout } from './Layout'
 export { default as Header } from './Header'
 
 // Page sections
-export { Hero, About, Contact as ContactSection } from './sections'
+export { Hero, About, Contact } from './sections'
 
 // Utility components
 export { default as OptimizedImage } from './OptimizedImage'

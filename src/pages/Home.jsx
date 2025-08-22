@@ -3,7 +3,7 @@ import {
   Layout,
   Hero,
   About,
-  ContactSection,
+  Contact,
   SEOProvider
 } from '../components'
 
@@ -20,7 +20,7 @@ const Home = () => (
     <Layout>
       <Hero />
       <About />
-      <ContactSection />
+      <Contact />
     </Layout>
   </SEOProvider>
 )
