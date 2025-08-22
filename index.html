@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Meta tags serão gerenciadas pelo React Helmet -->
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="apple-touch-icon" href="/jasmin-caroline.png">
-  <meta name="theme-color" content="#3182ce">
+    <!-- Meta tags serão gerenciadas pelo React Helmet -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" href="/jasmin-caroline.png">
+    <meta name="theme-color" content="#3182ce">
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
-  <body>
-    <div id="root"></div>
+    
+    <!-- Formulário estático para detecção do Netlify (hidden) -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="nome" />
+      <input type="email" name="email" />
+      <textarea name="mensagem"></textarea>
+    </form>
+    
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

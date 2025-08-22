@@ -90,14 +90,21 @@ export const ContactSection = styled.div`
       font-style: italic;
     }
 
-    &:focus {
+    &:disabled {
+      background: #f7fafc;
+      color: #a0aec0;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    &:focus:not(:disabled) {
       border-color: var(--color-primary, #3182ce);
       outline: none;
       box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
       transform: translateY(-1px);
     }
 
-    &:hover {
+    &:hover:not(:disabled) {
       border-color: #cbd5e0;
     }
   }
@@ -121,6 +128,18 @@ export const ContactSection = styled.div`
     position: relative;
     overflow: hidden;
 
+    &:disabled {
+      background: #a0aec0;
+      cursor: not-allowed;
+      opacity: 0.7;
+      
+      &:hover {
+        transform: none;
+        box-shadow: none;
+        background: #a0aec0;
+      }
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -132,7 +151,7 @@ export const ContactSection = styled.div`
       transition: left 0.5s;
     }
 
-    &:hover {
+    &:hover:not(:disabled) {
       background: linear-gradient(135deg, #2c5aa0, #1e3a8a);
       transform: translateY(-2px);
       box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);
@@ -142,7 +161,7 @@ export const ContactSection = styled.div`
       }
     }
 
-    &:active {
+    &:active:not(:disabled) {
       transform: translateY(0);
     }
 
